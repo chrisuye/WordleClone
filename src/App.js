@@ -23,10 +23,12 @@ const App = () => {
 
   function keyClick(letter) {
     if (letter === 'Backspace') {
-      setLetters(letters.filter((_, i) => i < pos - 1))
-      setWord(word.slice(0, -1))
-      console.log(word)
-      setPos(pos - 1)
+      if(word.length > 0) {
+        setLetters(letters.filter((_, i) => i < pos - 1))
+        setWord(word.slice(0, -1))
+        console.log(word)
+        setPos(pos - 1)
+      }
     } else if (letter === 'Enter') {
       if (word.length === 5) {
         let temptrys = trys + 1
@@ -92,10 +94,12 @@ const App = () => {
 
   useEffect(() => {
     function onDelete() {
-      setLetters(letters.filter((_, i) => i < pos - 1))
-      setWord(word.slice(0, -1))
-      console.log(word)
-      setPos(pos - 1)
+      if (word.length > 0) {
+        setLetters(letters.filter((_, i) => i < pos - 1))
+        setWord(word.slice(0, -1))
+        console.log(word)
+        setPos(pos - 1)
+      }
     }
   
     function onEnter() {
