@@ -1,0 +1,55 @@
+div.keyboard {
+    position: absolute;
+    background-color: rgba(173, 20, 20, 0.2);
+    width: 50%;
+    height: fit-content;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 110%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+}
+
+div.keyboard_inner {
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+div.keyboard_key {
+    float: left;
+    font-size: 1.25em;
+    background-color: rgb(196, 255, 209);
+    font-weight: bold;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: .25em;
+    cursor: pointer;
+}
+
+div.keyboard_key:hover {
+    background-color: rgba(119, 161, 128, 0.486);
+}
+
+div.correct {
+    background-color: #0f0;
+}
+
+div.wrong {
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+div.almost {
+    background-color: #ff0;
+}
