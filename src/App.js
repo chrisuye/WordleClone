@@ -5,7 +5,7 @@ import KeyBoard from './Component/KeyBoard';
 import React, { useState, useEffect } from 'react';
 import { randomWord, checkWord } from './Lib/wordHelper';
 
-let gameWord = "hello"//randomWord()
+let gameWord = randomWord()
 
 const App = () => {
   const [letters, setLetters] = useState([])
