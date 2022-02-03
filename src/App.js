@@ -5,7 +5,7 @@ import KeyBoard from './Component/KeyBoard';
 import React, { useState, useEffect } from 'react';
 import { randomWord, checkWord } from './Lib/wordHelper';
 
-let gameWord = randomWord()
+let gameWord = "hello"//randomWord()
 
 const App = () => {
   const [letters, setLetters] = useState([])
@@ -51,7 +51,7 @@ const App = () => {
   }
 
   function Color() {
-    let gameletters = gameWord.split("")
+      let gameletters = gameWord.split("")
       let wordletters = word.toLowerCase().split("")
       let colors = []
       let keyColors = []

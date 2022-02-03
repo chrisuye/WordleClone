@@ -45,3 +45,10 @@ div.wrong {
 div.almost {
     background-color: #ff0;
 }
+
+@media screen and (max-width: 430px) {
+    div.grid_container {
+        top: 90%;
+        left: 20%;
+    }
+}

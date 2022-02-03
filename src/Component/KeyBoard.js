@@ -14,10 +14,10 @@ const KeyBoard = ({ keyClick, keyColor, keys }) => {
                             {letter}
                         </div>
                     ))}
-                    <div className='keyboard_key' onClick={() => keyClick('Enter')}>
+                    <div className='keyboard_key enter' onClick={() => keyClick('Enter')}>
                         Enter
                     </div>
-                    <div className='keyboard_key' onClick={() => keyClick('Backspace')}>
+                    <div className='keyboard_key delete' onClick={() => keyClick('Backspace')}>
                         Delete
                     </div>
                 </div>
